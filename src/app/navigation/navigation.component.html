@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="'dialog'"
+    [mode]="'over'"
+  >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <app-sidebar-link [route]="'test-page-1'" [title]="'Test Page 1'" />
+      <app-sidebar-link [route]="'test-page-2'" [title]="'Test Page 2'" />
+      <app-sidebar-link [route]="'test-page-3'" [title]="'Test Page 3'" />
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Angular Quicklink</span>
+    </mat-toolbar>
+    <div class="content-wrapper">
+      <router-outlet />
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
