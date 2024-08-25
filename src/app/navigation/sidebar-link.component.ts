@@ -25,7 +25,6 @@ import { QuicklinkDirective } from 'ngx-quicklink';
       {{ title() }}
     </a>
   `,
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidebarLinkComponent {

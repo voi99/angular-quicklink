@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIconButton } from '@angular/material/button';
 import {
@@ -29,5 +29,6 @@ import { SidebarLinkComponent } from './sidebar-link.component';
     RouterOutlet,
     SidebarLinkComponent,
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavigationComponent {}

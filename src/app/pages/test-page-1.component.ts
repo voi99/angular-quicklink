@@ -52,7 +52,6 @@ import { MatAnchor, MatButton } from '@angular/material/button';
       <a mat-button routerLink="/">Back To Home Page</a>
     </div>
   `,
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class TestPage1Component {}
